@@ -5,7 +5,7 @@
 .menu{
     background-color: #1C3879;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     height: 12vh;
     display: flex;
     justify-content: space-around;
@@ -70,6 +70,7 @@
     border: 2px solid #607eaad8;
     padding: 40px;
     width: 150%;
+    text-align: justify;
     
     
 }
@@ -95,6 +96,7 @@
 footer{
     text-align: center;
     font-size: 17px;
+    margin-bottom: 15px;
 }
 
 
