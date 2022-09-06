@@ -1,0 +1,64 @@
+.body{
+    margin: 0%;
+}
+
+.menu{
+    background-color: blue;
+    color: white;
+    font-size: 25px;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    
+}
+
+.menu ul li{
+    padding-right: 100px;
+      
+}
+
+.banner{
+    background-image: url(Tecnologia1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+
+}
+
+.texto{
+    background-color: aqua;
+    color: black;
+    height: 20vh;
+}
+
+.texto p{
+    margin-top: 0%;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+    text-align: center;
+    
+}
+
+.cursos{
+    margin-top: 1%;
+}
+
+.curso1{ 
+    margin: 25px;
+    border: 2px solid aqua;
+}
+
+.curso2{
+    margin-left: 500px;
+    border: 2px solid aqua
+}
+
+
