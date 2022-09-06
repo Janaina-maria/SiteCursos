@@ -1,28 +1,31 @@
-.body{
-    margin: 0%;
+*{
+    margin: 0;
 }
-
+/* menu */
 .menu{
-    background-color: blue;
+    background-color: #1C3879;
     color: white;
     font-size: 25px;
-    height: 15vh;
+    height: 12vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
-.menu ul{
+.menu-list ul{
     list-style-type: none;
     display: flex;
     
 }
 
-.menu ul li{
+.menu-list ul li{
     padding-right: 100px;
       
 }
-
+.menu-list ul li:hover{
+    color: #b8e6f4;
+}
+/* menu final*/
 .banner{
     background-image: url(Tecnologia1.png);
     background-repeat: no-repeat;
@@ -33,7 +36,7 @@
 }
 
 .texto{
-    background-color: aqua;
+    background-color: #607eaad8;
     color: black;
     height: 20vh;
 }
@@ -46,19 +49,53 @@
     text-align: center;
     
 }
-
+.txt-curso{
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .cursos{
     margin-top: 1%;
+    
 }
 
-.curso1{ 
-    margin: 25px;
-    border: 2px solid aqua;
+.cursos1{
+    display: flex;
+    margin: 50px 50px 50px 50px;
+    width: 80%; 
+    padding-top: 10px; 
+    padding-left: 80px;
 }
 
-.curso2{
-    margin-left: 500px;
-    border: 2px solid aqua
+.curso1-bordas{  
+    border: 2px solid #607eaad8;
+    padding: 40px;
+    width: 150%;
+    
+    
 }
+
+.curso1-bordas .botao {
+    float:right;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+.botao{
+    padding: 12px;
+    background-color: #b8e6f4;
+    font-weight: bold;
+    border-radius: 17px;
+}
+.botao:hover {
+    background-color: blue;
+    color: #fff;
+    
+}
+
+footer{
+    text-align: center;
+    font-size: 17px;
+}
+
 
 
