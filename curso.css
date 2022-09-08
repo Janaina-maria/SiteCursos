@@ -1,0 +1,173 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/* faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura */
+}
+/* menu */
+/* Barra de rolagem */
+html::-webkit-scrollbar{
+    width: .3rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: #001d49;
+    border-radius: 5rem;
+}
+
+/* MENU */
+#cabecalho-principal {
+    background-color:#0c253a;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    /* Ficar igualmente espaçados e centralizados ao meio */
+    align-items: center;
+    /* Centralizados ao meio da caixa */
+}
+
+#logo {
+    margin-left: 40px;
+    font-weight: bold;
+    text-shadow: 3px 3px 0px #000000dd;
+    /* Sombra no fundo do texto */
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li {
+    list-style-type: none;
+    padding: 25px;
+    margin-right: 25px;
+}
+
+.nav-bar ul li {
+    text-transform: uppercase;
+    /* letra maiuscula ou caixa alta */
+    font-weight: 600;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.nav-bar ul li a:hover {
+    text-decoration:underline;
+    color: #1C3879
+}
+/* menu final*/
+.banner{
+    background-image: url(img/Tecnologia1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+
+}
+
+.texto{
+    background-color: #607eaad8;
+    color: black;
+    height: 20vh;
+}
+
+.texto p{
+    margin-top: 0%;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+    text-align: center;
+    
+}
+.txt-curso{
+    font-size: 2em;
+    text-align: initial;
+    margin-bottom: 15px;
+    font-weight: bold;
+
+}
+.cursos{
+    margin-top: 1%;
+    
+}
+
+.cursos1{
+    display: flex;
+    margin: 50px 50px 50px 50px;
+    width: 80%; 
+    padding-top: 10px; 
+    padding-left: 80px;
+    text-align: justify;
+}
+
+.curso1-bordas{  
+    border: 2px solid #607eaad8;
+    padding: 40px;
+    width: 150%;
+
+}
+
+.curso1-bordas .btn  {
+    float:right;
+    cursor: pointer;
+    margin-top: 10px;
+    
+
+}
+.btn{
+    padding: 12px;
+    background-color: #b8e6f4;
+    font-weight: bold;
+    border-radius: 17px;
+
+}
+.btn a{
+    color:#000;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #01018a;
+    
+}
+.btn a:hover{
+    color: #fff;
+}
+#info{
+    height: 200px;
+    background: linear-gradient(#000000cc,#000000cc), url(img/banner-2.jpg);
+    background-position: center; /* Centralizar a foto */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+}
+#info h3{
+    margin-bottom: 1.3em;
+    font-size: 2em;
+    font-weight: 500;
+}
+#info .btn {
+    width: 30%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.2;
+}
+.rodape{
+    height: 8vh;
+    background-color: #060f18;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+

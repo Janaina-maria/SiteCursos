@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/* faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura */
+}
+/* Barra de rolagem */
+html::-webkit-scrollbar{
+    width: .3rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: #001d49;
+    border-radius: 5rem;
+}
+
+/* MENU */
+#cabecalho-principal {
+    background-color:#0c253a;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    /* Ficar igualmente espaçados e centralizados ao meio */
+    align-items: center;
+    /* Centralizados ao meio da caixa */
+}
+
+#logo {
+    margin-left: 40px;
+    font-weight: bold;
+    text-shadow: 3px 3px 0px #000000dd;
+    /* Sombra no fundo do texto */
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li {
+    list-style-type: none;
+    padding: 25px;
+    margin-right: 25px;
+}
+
+.nav-bar ul li {
+    text-transform: uppercase;
+    /* letra maiuscula ou caixa alta */
+    font-weight: 600;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.nav-bar ul li a:hover {
+    text-decoration:underline;
+    color: #1C3879
+}
+/* TELA DE LOGIN */
+img{
+	width: 100%;
+}
+.login {
+    height: 1000px;
+    width: 100%;
+    background: #f2eee3;
+    position: relative;
+}
+.login_box {
+    width: 1050px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 4px 22px -8px #0004;
+    display: flex;
+    overflow: hidden;
+}
+.login_box .esquerda{
+  width: 41%;
+  height: 100%;
+  padding: 25px 25px;
+
+}
+.login_box .direita{
+  width: 59%;
+  height: 100%
+}
+.esquerda .top_link a {
+    color: #452A5A;
+    font-weight: 400;
+}
+.esquerda .top_link{
+  height: 20px
+}
+.esquerda .contato{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 100%;
+    width: 73%;
+    margin: auto;
+}
+.esquerda h3{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.esquerda input {
+    border: none;
+    width: 80%;
+    margin: 15px 0px;
+    border-bottom: 1px solid #4f30677d;
+    padding: 7px 9px;
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    font-weight: 600;
+    font-size: 14px;
+}
+.esquerda{
+	background: linear-gradient(-45deg, #b9caf9, #fff);
+}
+.submit {
+    border: none;
+    padding: 15px 70px;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    margin-top: 120px;
+    background: #1C3879;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0px 9px 15px -11px #1C3879;
+}
+
+.direita {
+	background: url(https://cdn.dribbble.com/users/118246/screenshots/5343519/wifi.gif);
+	color: #fff;
+	position: relative;
+}
+
+.direita .direita-text{
+  height: 100%;
+  position: relative;
+  transform: translate(0%, 45%);
+}
+.direita-text h1{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  color: #001d49;
+  text-shadow: 3px 3px 3px #0000008b;
+}
+.direita-text h5{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+  color: #001d49;
+  
+}
+
+.direita .direita-introducao{
+  position: absolute;
+  width: 70px;
+  height: 7px;
+  background: #fff0;
+  left: 50%;
+  bottom: 70px;
+  transform: translate(-50%, 0%);
+}
+.top_link img {
+    width: 28px;
+    padding-right:  7px;
+    margin-top: -3px;
+}
+.rodape{
+    height: 8vh;
+    background-color: #060f18;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

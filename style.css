@@ -1,103 +1,246 @@
-*{
+@charset "UTF-8";
+
+* {
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;/* faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura */
 }
-/* menu */
-.menu{
-    background-color: #1C3879;
-    color: white;
-    font-size: 20px;
-    height: 12vh;
+/* Barra de rolagem */
+html::-webkit-scrollbar{
+    width: .3rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: #001d49;
+    border-radius: 5rem;
+}
+
+/* MENU */
+#cabecalho-principal {
+    background-color:#0c253a;
+    color: #fff;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    /* Ficar igualmente espaçados e centralizados ao meio */
     align-items: center;
+    /* Centralizados ao meio da caixa */
 }
 
-.menu-list ul{
-    list-style-type: none;
-    display: flex;
-    
-}
-
-.menu-list ul li{
-    padding-right: 100px;
-      
-}
-.menu-list ul li:hover{
-    color: #b8e6f4;
-}
-/* menu final*/
-.banner{
-    background-image: url(Tecnologia1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 70vh;
-
-}
-
-.texto{
-    background-color: #607eaad8;
-    color: black;
-    height: 20vh;
-}
-
-.texto p{
-    margin-top: 0%;
-    font-size: 40px;
-    padding-top: 20px;
-    padding-left: 20px;
-    text-align: center;
-    
-}
-.txt-curso{
-    font-size: 2em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.cursos{
-    margin-top: 1%;
-    
-}
-
-.cursos1{
-    display: flex;
-    margin: 50px 50px 50px 50px;
-    width: 80%; 
-    padding-top: 10px; 
-    padding-left: 80px;
-}
-
-.curso1-bordas{  
-    border: 2px solid #607eaad8;
-    padding: 40px;
-    width: 150%;
-    text-align: justify;
-    
-    
-}
-
-.curso1-bordas .botao {
-    float:right;
-    cursor: pointer;
-    margin-top: 10px;
-
-}
-.botao{
-    padding: 12px;
-    background-color: #b8e6f4;
+#logo {
+    margin-left: 40px;
     font-weight: bold;
-    border-radius: 17px;
+    text-shadow: 3px 3px 0px #000000dd;
+    /* Sombra no fundo do texto */
 }
-.botao:hover {
-    background-color: blue;
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li {
+    list-style-type: none;
+    padding: 25px;
+    margin-right: 25px;
+}
+
+.nav-bar ul li {
+    text-transform: uppercase;
+    /* letra maiuscula ou caixa alta */
+    font-weight: 600;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.nav-bar ul li a:hover {
+    text-decoration:underline;
+    color: #1C3879
+}
+
+/* Marketing - chamada da pagina Home */
+
+#evento-descricao{
+    background: linear-gradient(#000000cc,#000000cc), url(img/banner-01.jpg);
+    background-position: center; /* Centralizar a foto */
+    background-size: cover; /* expandir o maximo possivel */
+    height: 85vh;
+    display: flex; 
+    justify-content: space-around; /* Ficar igualmente espaçados e centralizados ao meio */
+    align-items: center;
+    color: #fff;
+}
+
+#descricao-home h2{
+    margin-bottom: 1.2em;
+    font-size: 3em;
+}
+#descricao-home h2,
+#descricao-home .evento-slogan{
+    color: #069feb;
+}
+#descricao-home .sobre-evento{
+    font-size: 1.7em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1.4em;
+}
+#descricao-home p {
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+}
+#descricao-home .evento-slogan{
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+#descricao-home .btn-curso{
+    background-color: #1c3879d3;
+    text-transform: uppercase;
+    width: 60%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-left: 12%;
+}
+#descricao-home .btn-curso a {
+    text-decoration: none;
     color: #fff;
     
 }
+#descricao-home .btn-curso:hover{
+    background-color: #50acdb;
+    
+}
 
-footer{
-    text-align: center;
-    font-size: 17px;
-    margin-bottom: 15px;
+/* FORMULARIO */
+#inscricao-form {
+    background-color:#6798b933 ;
+    padding: 2em;
+    max-width: 22%;
+}
+
+#inscricao-form p {
+    font-size: 1.25em;
+    color: #ffffff;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+.form-group{
+    display: flex;
+    flex-direction: column; /* deixar um em baixo do outro */
+    margin-bottom: 0.8em;
+    
+}
+.form-group label {
+    color: #fffbfbc4;
+    margin-bottom: .3em;
+    font-weight: bold;
+}
+.form-group input, .form-group select {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+/* Botão */
+.btn {
+    background-color: #50acdb;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.btn:hover {
+    opacity: 1;
 }
 
 
+/* Professores */
+#sobre-nos h2{
+    background-color:#013048bc;
+    text-align: center;
+    padding: 1.3em;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color:#00050e;
+}
+#sobre-nos h2 span {
+    text-transform: uppercase;
+    color: #ffffffe9;
+}
+#detalhes{
+    width: 80%;
+    margin: 0 auto;
+}
+.detalhe{
+    display: flex;
+    align-items: flex-start; /* os ítens são alinhados junto à borda de início (start) de acordo com qual for a flex-direction do container. */
+    justify-content: space-between;
+    gap: 5%; /* espaçamento interno do flexbox */
+    margin-bottom: 5em;
+    margin-top: 2em;
+}
+.detalhe img{
+    width: 50%;
+}
+.detalhe h3{
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 500;
+}
+#detalhes-1 h3 {
+    font-size: 3.4em;
+    font-weight: 700;
+}
+.detalhes-descricao{
+    width: 100%;
+    padding-left: 2em;
+}
+.detalhes-descricao p{
+    margin-bottom: 0.7em;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.5em;
+}
+#detalhes-2 img{
+    margin-top: 95px;
+}
 
+.detalhes-descricao dl dt{
+    margin: 0.5em 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#detalhes-3 img{
+    margin-top: 40px;
+}
+#detalhes-1 img:hover,
+#detalhes-2 img:hover,
+#detalhes-3 img:hover {
+
+    transform: scale(1.1);
+    box-shadow: 5px 5px 0 #0130484f;
+}
+
+/* Rodapé */
+.rodape{
+    height: 8vh;
+    background-color: #060f18;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,160 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/* faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura */
+}
+/* Barra de rolagem */
+html::-webkit-scrollbar{
+    width: .3rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: #001d49;
+    border-radius: 5rem;
+}
+
+/* MENU */
+#cabecalho-principal {
+    background-color:#0c253a;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    /* Ficar igualmente espaçados e centralizados ao meio */
+    align-items: center;
+    /* Centralizados ao meio da caixa */
+}
+
+#logo {
+    margin-left: 40px;
+    font-weight: bold;
+    text-shadow: 3px 3px 0px #000000dd;
+    /* Sombra no fundo do texto */
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li {
+    list-style-type: none;
+    padding: 25px;
+    margin-right: 25px;
+}
+
+.nav-bar ul li {
+    text-transform: uppercase;
+    /* letra maiuscula ou caixa alta */
+    font-weight: 600;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.nav-bar ul li a:hover {
+    text-decoration:underline;
+    color: #1C3879
+}
+
+.banner-contato{
+    background-image: url(img/contato.png);
+    background-position: center; /* Centralizar a foto */
+    background-size: cover; /* expandir o maximo possivel */
+    height: 85vh;
+    color: #fff;
+}
+
+/* contatooo */
+.texto1{
+    color: black; 
+    font-size:20px;
+    display: flex;
+    justify-content: end;
+}
+.sociais{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    
+}
+.sociais h5{
+    padding: 10px;
+}
+.sociais img{
+    padding: 4px;
+    width: 30px;
+}
+.parceiros{
+    margin: 15px;
+    flex-direction: column;
+    
+}
+.parceiros .img{
+    width: 100px;
+    height: 50px;
+}
+
+.caixinha{
+    background-color: white;
+    border-radius: 10px;
+    width: 200px;
+    height: 110px;
+    margin: 10px;
+    padding: 10px;
+    color: #000;
+}
+
+.contato{
+    text-align: center;
+    margin-top: 25px;
+    float:right;
+    
+}
+
+.contato p{
+    color: white;
+    font-size: 30px;
+    margin: 15px 30px;
+}
+
+.container_caixinhas{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+}
+
+.formulario{
+    margin: 25px;
+}
+.texto2 p{
+    color: white; 
+    font-size: 30px; 
+    margin-left: 50px;
+}
+.botao{
+    background-color: #2461efd3;
+    color: #fff;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.botao:hover{
+    background-color: #0c253a;
+    color: aquamarine;
+}
+.rodape{
+    height: 8vh;
+    background-color: #060f18;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
